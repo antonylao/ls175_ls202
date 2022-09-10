@@ -91,6 +91,22 @@
         display: inline;
       }
 
+      dt {
+        font-weight: bold;
+      }
+
+      td + td dt {
+        font-weight: normal;
+      }
+
+      .indent + td dt {
+        font-weight: normal;
+      }
+
+      main table:nth-child(3) td:last-child {
+        font-weight: bold;
+      }
+
       dd {
         margin-left: 0;
       }
@@ -157,14 +173,14 @@
     <main>
       <table>
         <tr>
-          <th>Amount Per Serving</th>
+          <th scope="col">Amount Per Serving</th>
           <td></td>
         </tr>
         <tr>
           <td>
             <dl>
               <dt>
-                <b>Calories</b>
+                Calories
               </dt>
               <dd>230</dd>
             </dl>
@@ -183,16 +199,16 @@
       <table>
         <tr>
           <td colspan="2"></td>
-          <th>% Daily Value*</th>
+          <th scope="col">% Daily Value*</th>
         </tr>
         <tr>
           <td colspan="2">
             <dl>
-              <dt><b>Total Fat</b></dt>
+              <dt>Total Fat</dt>
               <dd>8g</dd>
             </dl>
           </td>
-          <td><b>12%</b></td>
+          <td>12%</td>
         </tr>
         <tr>
           <td class="indent"></td>
@@ -202,13 +218,13 @@
               <dd>1g</dd>
             </dl>
           </td>
-          <td><b>5%</b></td>
+          <td>5%</td>
         </tr>
         <tr>
           <td class="indent"></td>
           <td>
             <dl>
-              <dt><i>Trans</i> Fat</dt>
+              <dt><em>Trans</em> Fat</dt>
               <dd>0g</dd>
             </dl>
           </td>
@@ -217,30 +233,30 @@
         <tr>
           <td colspan="2">
             <dl>
-              <dt><b>Cholesterol</b></dt>
+              <dt>Cholesterol</dt>
               <dd>0mg</dd>
             </dl>
           </td>
-          <td><b>0%</b></td>
+          <td>0%</td>
         </tr>
 
         <tr>
           <td colspan="2">
             <dl>
-              <dt><b>Sodium</b></dt>
+              <dt>Sodium</dt>
               <dd>160mg</dd>
             </dl>
           </td>
-          <td><b>7%</b></td>
+          <td>7%</td>
         </tr>
         <tr>
           <td colspan="2">
             <dl>
-              <dt><b>Total Carbohydrate</b></dt>
+              <dt>Total Carbohydrate</dt>
               <dd>37g</dd>
             </dl>
           </td>
-          <td><b>12%</b></td>
+          <td>12%</td>
         </tr>
         <tr>
           <td class="indent"></td>
@@ -250,7 +266,7 @@
               <dd>4g</dd>
             </dl>
           </td>
-          <td><b>16%</b></td>
+          <td>16%</td>
         </tr>
         <tr>
           <td class="indent"></td>
@@ -265,7 +281,7 @@
         <tr>
           <td colspan="2">
             <dl>
-              <dt><b>Protein</b></dt>
+              <dt>Protein</dt>
               <dd>3g</dd>
             </dl>
           </td>
@@ -303,8 +319,8 @@
         <tr>
           <td colspan="2"></td>
           <th scope="col">Calories:</th>
-          <td>2,000</td>
-          <td>2,500</td>
+          <th scope="col">2,000</td>
+          <th scope="col">2,500</td>
         </tr>
         <tr>
           <th scope="row" colspan="2">Total Fat</th>
